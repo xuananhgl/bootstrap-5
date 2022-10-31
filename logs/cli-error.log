@@ -1,0 +1,147 @@
+2022-08-29 12:38:36 Error: [RuntimeException] Unknown command `cake sever`. Run `cake --help` to get the list of valid commands. in C:\xampp\htdocs\headers\vendor\cakephp\cakephp\src\Console\CommandRunner.php on line 346
+Stack Trace:
+#0 C:\xampp\htdocs\headers\vendor\cakephp\cakephp\src\Console\CommandRunner.php(157): Cake\Console\CommandRunner->resolveName(Object(Cake\Console\CommandCollection), Object(Cake\Console\ConsoleIo), 'sever')
+#1 C:\xampp\htdocs\headers\bin\cake.php(12): Cake\Console\CommandRunner->run(Array)
+#2 {main}
+
+
+2022-08-29 14:23:25 Error: [RuntimeException] Unknown command `cake sever`. Run `cake --help` to get the list of valid commands. in C:\xampp\htdocs\headers\vendor\cakephp\cakephp\src\Console\CommandRunner.php on line 346
+Stack Trace:
+#0 C:\xampp\htdocs\headers\vendor\cakephp\cakephp\src\Console\CommandRunner.php(157): Cake\Console\CommandRunner->resolveName(Object(Cake\Console\CommandCollection), Object(Cake\Console\ConsoleIo), 'sever')
+#1 C:\xampp\htdocs\headers\bin\cake.php(12): Cake\Console\CommandRunner->run(Array)
+#2 {main}
+
+
+2022-08-29 23:54:24 Error: [Error] Call to a member function allow() on bool in C:\xampp\htdocs\headers\src\Controller\UsersController.php on line 120
+Stack Trace:
+#0 C:\xampp\htdocs\headers\vendor\cakephp\cakephp\src\Controller\Controller.php(273): App\Controller\UsersController->initialize()
+#1 C:\xampp\htdocs\headers\vendor\cakephp\bake\src\Shell\Task\TestTask.php(330): Cake\Controller\Controller->__construct(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#2 C:\xampp\htdocs\headers\vendor\cakephp\bake\src\Shell\Task\TestTask.php(237): Bake\Shell\Task\TestTask->buildTestSubject('Controller', 'App\\Controller\\...')
+#3 C:\xampp\htdocs\headers\vendor\cakephp\bake\src\Shell\Task\ControllerTask.php(213): Bake\Shell\Task\TestTask->bake('Controller', 'Users')
+#4 C:\xampp\htdocs\headers\vendor\cakephp\bake\src\Shell\Task\ControllerTask.php(162): Bake\Shell\Task\ControllerTask->bakeTest('Users')
+#5 C:\xampp\htdocs\headers\vendor\cakephp\bake\src\Shell\Task\ControllerTask.php(69): Bake\Shell\Task\ControllerTask->bake('Users')
+#6 C:\xampp\htdocs\headers\vendor\cakephp\cakephp\src\Console\Shell.php(532): Bake\Shell\Task\ControllerTask->main('users')
+#7 C:\xampp\htdocs\headers\vendor\cakephp\cakephp\src\Console\Shell.php(525): Cake\Console\Shell->runCommand(Array, false, Array)
+#8 C:\xampp\htdocs\headers\vendor\cakephp\cakephp\src\Console\CommandRunner.php(384): Cake\Console\Shell->runCommand(Array, true)
+#9 C:\xampp\htdocs\headers\vendor\cakephp\cakephp\src\Console\CommandRunner.php(162): Cake\Console\CommandRunner->runShell(Object(Bake\Shell\BakeShell), Array)
+#10 C:\xampp\htdocs\headers\bin\cake.php(12): Cake\Console\CommandRunner->run(Array)
+#11 {main}
+
+
+2022-09-07 08:10:50 Error: [Cake\Database\Exception] SQLSTATE[42S02]: Base table or view not found: 1146 Table 'datatable.authors' doesn't exist in D:\Xamm74\htdocs\headers\vendor\cakephp\cakephp\src\Database\Schema\Collection.php on line 133
+Stack Trace:
+#0 D:\Xamm74\htdocs\headers\vendor\cakephp\cakephp\src\Database\Schema\Collection.php(99): Cake\Database\Schema\Collection->_reflect('Column', 'authors', Array, Object(Cake\Database\Schema\TableSchema))
+#1 D:\Xamm74\htdocs\headers\vendor\cakephp\cakephp\src\Database\Schema\CachedCollection.php(63): Cake\Database\Schema\Collection->describe('authors', Array)
+#2 D:\Xamm74\htdocs\headers\vendor\cakephp\cakephp\src\ORM\Table.php(560): Cake\Database\Schema\CachedCollection->describe('authors')
+#3 D:\Xamm74\htdocs\headers\vendor\cakephp\cakephp\src\ORM\Table.php(685): Cake\ORM\Table->getSchema()
+#4 D:\Xamm74\htdocs\headers\vendor\cakephp\bake\src\Shell\Task\ModelTask.php(221): Cake\ORM\Table->getPrimaryKey()
+#5 D:\Xamm74\htdocs\headers\vendor\cakephp\bake\src\Shell\Task\ModelTask.php(131): Bake\Shell\Task\ModelTask->getAssociations(Object(Cake\ORM\Table))
+#6 D:\Xamm74\htdocs\headers\vendor\cakephp\bake\src\Shell\Task\ModelTask.php(114): Bake\Shell\Task\ModelTask->getTableContext(Object(Cake\ORM\Table), 'authors', 'Authors')
+#7 D:\Xamm74\htdocs\headers\vendor\cakephp\bake\src\Shell\Task\ModelTask.php(101): Bake\Shell\Task\ModelTask->bake('Authors')
+#8 D:\Xamm74\htdocs\headers\vendor\cakephp\bake\src\Shell\BakeShell.php(279): Bake\Shell\Task\ModelTask->main('Authors')
+#9 D:\Xamm74\htdocs\headers\vendor\cakephp\cakephp\src\Collection\CollectionTrait.php(65): Bake\Shell\BakeShell->Bake\Shell\{closure}('Authors', 0)
+#10 D:\Xamm74\htdocs\headers\vendor\cakephp\bake\src\Shell\BakeShell.php(280): Cake\Collection\Collection->each(Object(Closure))
+#11 D:\Xamm74\htdocs\headers\vendor\cakephp\cakephp\src\Console\Shell.php(518): Bake\Shell\BakeShell->all('authors')
+#12 D:\Xamm74\htdocs\headers\vendor\cakephp\cakephp\src\Console\CommandRunner.php(384): Cake\Console\Shell->runCommand(Array, true)
+#13 D:\Xamm74\htdocs\headers\vendor\cakephp\cakephp\src\Console\CommandRunner.php(162): Cake\Console\CommandRunner->runShell(Object(Bake\Shell\BakeShell), Array)
+#14 D:\Xamm74\htdocs\headers\bin\cake.php(12): Cake\Console\CommandRunner->run(Array)
+#15 {main}
+
+
+Caused by: [PDOException] SQLSTATE[42S02]: Base table or view not found: 1146 Table 'datatable.authors' doesn't exist in D:\Xamm74\htdocs\headers\vendor\cakephp\cakephp\src\Database\Statement\MysqlStatement.php on line 39
+Stack Trace:
+#0 D:\Xamm74\htdocs\headers\vendor\cakephp\cakephp\src\Database\Statement\MysqlStatement.php(39): PDOStatement->execute(NULL)
+#1 D:\Xamm74\htdocs\headers\vendor\cakephp\cakephp\src\Database\Connection.php(350): Cake\Database\Statement\MysqlStatement->execute()
+#2 D:\Xamm74\htdocs\headers\vendor\cakephp\cakephp\src\Core\Retry\CommandRetry.php(68): Cake\Database\Connection->Cake\Database\{closure}()
+#3 D:\Xamm74\htdocs\headers\vendor\cakephp\cakephp\src\Database\Connection.php(353): Cake\Core\Retry\CommandRetry->run(Object(Closure))
+#4 D:\Xamm74\htdocs\headers\vendor\cakephp\cakephp\src\Database\Connection.php(302): Cake\Database\Connection->query('SHOW FULL COLUM...')
+#5 D:\Xamm74\htdocs\headers\vendor\cakephp\cakephp\src\Core\Retry\CommandRetry.php(68): Cake\Database\Connection->Cake\Database\{closure}()
+#6 D:\Xamm74\htdocs\headers\vendor\cakephp\cakephp\src\Database\Connection.php(306): Cake\Core\Retry\CommandRetry->run(Object(Closure))
+#7 D:\Xamm74\htdocs\headers\vendor\cakephp\cakephp\src\Database\Schema\Collection.php(131): Cake\Database\Connection->execute('SHOW FULL COLUM...', Array)
+#8 D:\Xamm74\htdocs\headers\vendor\cakephp\cakephp\src\Database\Schema\Collection.php(99): Cake\Database\Schema\Collection->_reflect('Column', 'authors', Array, Object(Cake\Database\Schema\TableSchema))
+#9 D:\Xamm74\htdocs\headers\vendor\cakephp\cakephp\src\Database\Schema\CachedCollection.php(63): Cake\Database\Schema\Collection->describe('authors', Array)
+#10 D:\Xamm74\htdocs\headers\vendor\cakephp\cakephp\src\ORM\Table.php(560): Cake\Database\Schema\CachedCollection->describe('authors')
+#11 D:\Xamm74\htdocs\headers\vendor\cakephp\cakephp\src\ORM\Table.php(685): Cake\ORM\Table->getSchema()
+#12 D:\Xamm74\htdocs\headers\vendor\cakephp\bake\src\Shell\Task\ModelTask.php(221): Cake\ORM\Table->getPrimaryKey()
+#13 D:\Xamm74\htdocs\headers\vendor\cakephp\bake\src\Shell\Task\ModelTask.php(131): Bake\Shell\Task\ModelTask->getAssociations(Object(Cake\ORM\Table))
+#14 D:\Xamm74\htdocs\headers\vendor\cakephp\bake\src\Shell\Task\ModelTask.php(114): Bake\Shell\Task\ModelTask->getTableContext(Object(Cake\ORM\Table), 'authors', 'Authors')
+#15 D:\Xamm74\htdocs\headers\vendor\cakephp\bake\src\Shell\Task\ModelTask.php(101): Bake\Shell\Task\ModelTask->bake('Authors')
+#16 D:\Xamm74\htdocs\headers\vendor\cakephp\bake\src\Shell\BakeShell.php(279): Bake\Shell\Task\ModelTask->main('Authors')
+#17 D:\Xamm74\htdocs\headers\vendor\cakephp\cakephp\src\Collection\CollectionTrait.php(65): Bake\Shell\BakeShell->Bake\Shell\{closure}('Authors', 0)
+#18 D:\Xamm74\htdocs\headers\vendor\cakephp\bake\src\Shell\BakeShell.php(280): Cake\Collection\Collection->each(Object(Closure))
+#19 D:\Xamm74\htdocs\headers\vendor\cakephp\cakephp\src\Console\Shell.php(518): Bake\Shell\BakeShell->all('authors')
+#20 D:\Xamm74\htdocs\headers\vendor\cakephp\cakephp\src\Console\CommandRunner.php(384): Cake\Console\Shell->runCommand(Array, true)
+#21 D:\Xamm74\htdocs\headers\vendor\cakephp\cakephp\src\Console\CommandRunner.php(162): Cake\Console\CommandRunner->runShell(Object(Bake\Shell\BakeShell), Array)
+#22 D:\Xamm74\htdocs\headers\bin\cake.php(12): Cake\Console\CommandRunner->run(Array)
+#23 {main}
+
+
+2022-09-07 08:17:49 Error: [Cake\Database\Exception] SQLSTATE[42S02]: Base table or view not found: 1146 Table 'datatable.tags' doesn't exist in D:\Xamm74\htdocs\headers\vendor\cakephp\cakephp\src\Database\Schema\Collection.php on line 133
+Stack Trace:
+#0 D:\Xamm74\htdocs\headers\vendor\cakephp\cakephp\src\Database\Schema\Collection.php(99): Cake\Database\Schema\Collection->_reflect('Column', 'tags', Array, Object(Cake\Database\Schema\TableSchema))
+#1 D:\Xamm74\htdocs\headers\vendor\cakephp\cakephp\src\Database\Schema\CachedCollection.php(63): Cake\Database\Schema\Collection->describe('tags', Array)
+#2 D:\Xamm74\htdocs\headers\vendor\cakephp\cakephp\src\ORM\Table.php(560): Cake\Database\Schema\CachedCollection->describe('tags')
+#3 D:\Xamm74\htdocs\headers\vendor\cakephp\cakephp\src\ORM\Table.php(685): Cake\ORM\Table->getSchema()
+#4 D:\Xamm74\htdocs\headers\vendor\cakephp\bake\src\Shell\Task\ModelTask.php(221): Cake\ORM\Table->getPrimaryKey()
+#5 D:\Xamm74\htdocs\headers\vendor\cakephp\bake\src\Shell\Task\ModelTask.php(131): Bake\Shell\Task\ModelTask->getAssociations(Object(Cake\ORM\Table))
+#6 D:\Xamm74\htdocs\headers\vendor\cakephp\bake\src\Shell\Task\ModelTask.php(114): Bake\Shell\Task\ModelTask->getTableContext(Object(Cake\ORM\Table), 'tags', 'Tags')
+#7 D:\Xamm74\htdocs\headers\vendor\cakephp\bake\src\Shell\Task\ModelTask.php(101): Bake\Shell\Task\ModelTask->bake('Tags')
+#8 D:\Xamm74\htdocs\headers\vendor\cakephp\bake\src\Shell\BakeShell.php(279): Bake\Shell\Task\ModelTask->main('Tags')
+#9 D:\Xamm74\htdocs\headers\vendor\cakephp\cakephp\src\Collection\CollectionTrait.php(65): Bake\Shell\BakeShell->Bake\Shell\{closure}('Tags', 0)
+#10 D:\Xamm74\htdocs\headers\vendor\cakephp\bake\src\Shell\BakeShell.php(280): Cake\Collection\Collection->each(Object(Closure))
+#11 D:\Xamm74\htdocs\headers\vendor\cakephp\cakephp\src\Console\Shell.php(518): Bake\Shell\BakeShell->all('tags')
+#12 D:\Xamm74\htdocs\headers\vendor\cakephp\cakephp\src\Console\CommandRunner.php(384): Cake\Console\Shell->runCommand(Array, true)
+#13 D:\Xamm74\htdocs\headers\vendor\cakephp\cakephp\src\Console\CommandRunner.php(162): Cake\Console\CommandRunner->runShell(Object(Bake\Shell\BakeShell), Array)
+#14 D:\Xamm74\htdocs\headers\bin\cake.php(12): Cake\Console\CommandRunner->run(Array)
+#15 {main}
+
+
+Caused by: [PDOException] SQLSTATE[42S02]: Base table or view not found: 1146 Table 'datatable.tags' doesn't exist in D:\Xamm74\htdocs\headers\vendor\cakephp\cakephp\src\Database\Statement\MysqlStatement.php on line 39
+Stack Trace:
+#0 D:\Xamm74\htdocs\headers\vendor\cakephp\cakephp\src\Database\Statement\MysqlStatement.php(39): PDOStatement->execute(NULL)
+#1 D:\Xamm74\htdocs\headers\vendor\cakephp\cakephp\src\Database\Connection.php(350): Cake\Database\Statement\MysqlStatement->execute()
+#2 D:\Xamm74\htdocs\headers\vendor\cakephp\cakephp\src\Core\Retry\CommandRetry.php(68): Cake\Database\Connection->Cake\Database\{closure}()
+#3 D:\Xamm74\htdocs\headers\vendor\cakephp\cakephp\src\Database\Connection.php(353): Cake\Core\Retry\CommandRetry->run(Object(Closure))
+#4 D:\Xamm74\htdocs\headers\vendor\cakephp\cakephp\src\Database\Connection.php(302): Cake\Database\Connection->query('SHOW FULL COLUM...')
+#5 D:\Xamm74\htdocs\headers\vendor\cakephp\cakephp\src\Core\Retry\CommandRetry.php(68): Cake\Database\Connection->Cake\Database\{closure}()
+#6 D:\Xamm74\htdocs\headers\vendor\cakephp\cakephp\src\Database\Connection.php(306): Cake\Core\Retry\CommandRetry->run(Object(Closure))
+#7 D:\Xamm74\htdocs\headers\vendor\cakephp\cakephp\src\Database\Schema\Collection.php(131): Cake\Database\Connection->execute('SHOW FULL COLUM...', Array)
+#8 D:\Xamm74\htdocs\headers\vendor\cakephp\cakephp\src\Database\Schema\Collection.php(99): Cake\Database\Schema\Collection->_reflect('Column', 'tags', Array, Object(Cake\Database\Schema\TableSchema))
+#9 D:\Xamm74\htdocs\headers\vendor\cakephp\cakephp\src\Database\Schema\CachedCollection.php(63): Cake\Database\Schema\Collection->describe('tags', Array)
+#10 D:\Xamm74\htdocs\headers\vendor\cakephp\cakephp\src\ORM\Table.php(560): Cake\Database\Schema\CachedCollection->describe('tags')
+#11 D:\Xamm74\htdocs\headers\vendor\cakephp\cakephp\src\ORM\Table.php(685): Cake\ORM\Table->getSchema()
+#12 D:\Xamm74\htdocs\headers\vendor\cakephp\bake\src\Shell\Task\ModelTask.php(221): Cake\ORM\Table->getPrimaryKey()
+#13 D:\Xamm74\htdocs\headers\vendor\cakephp\bake\src\Shell\Task\ModelTask.php(131): Bake\Shell\Task\ModelTask->getAssociations(Object(Cake\ORM\Table))
+#14 D:\Xamm74\htdocs\headers\vendor\cakephp\bake\src\Shell\Task\ModelTask.php(114): Bake\Shell\Task\ModelTask->getTableContext(Object(Cake\ORM\Table), 'tags', 'Tags')
+#15 D:\Xamm74\htdocs\headers\vendor\cakephp\bake\src\Shell\Task\ModelTask.php(101): Bake\Shell\Task\ModelTask->bake('Tags')
+#16 D:\Xamm74\htdocs\headers\vendor\cakephp\bake\src\Shell\BakeShell.php(279): Bake\Shell\Task\ModelTask->main('Tags')
+#17 D:\Xamm74\htdocs\headers\vendor\cakephp\cakephp\src\Collection\CollectionTrait.php(65): Bake\Shell\BakeShell->Bake\Shell\{closure}('Tags', 0)
+#18 D:\Xamm74\htdocs\headers\vendor\cakephp\bake\src\Shell\BakeShell.php(280): Cake\Collection\Collection->each(Object(Closure))
+#19 D:\Xamm74\htdocs\headers\vendor\cakephp\cakephp\src\Console\Shell.php(518): Bake\Shell\BakeShell->all('tags')
+#20 D:\Xamm74\htdocs\headers\vendor\cakephp\cakephp\src\Console\CommandRunner.php(384): Cake\Console\Shell->runCommand(Array, true)
+#21 D:\Xamm74\htdocs\headers\vendor\cakephp\cakephp\src\Console\CommandRunner.php(162): Cake\Console\CommandRunner->runShell(Object(Bake\Shell\BakeShell), Array)
+#22 D:\Xamm74\htdocs\headers\bin\cake.php(12): Cake\Console\CommandRunner->run(Array)
+#23 {main}
+
+
+2022-09-10 02:56:08 Error: [RuntimeException] Unknown command `cake sever`. Run `cake --help` to get the list of valid commands. in D:\Xamm74\htdocs\headers\vendor\cakephp\cakephp\src\Console\CommandRunner.php on line 346
+Stack Trace:
+#0 D:\Xamm74\htdocs\headers\vendor\cakephp\cakephp\src\Console\CommandRunner.php(157): Cake\Console\CommandRunner->resolveName(Object(Cake\Console\CommandCollection), Object(Cake\Console\ConsoleIo), 'sever')
+#1 D:\Xamm74\htdocs\headers\bin\cake.php(12): Cake\Console\CommandRunner->run(Array)
+#2 {main}
+
+
+2022-10-03 09:55:42 Error: [RuntimeException] Unknown command `cake servere`. Run `cake --help` to get the list of valid commands. in D:\Xamm74\htdocs\headers\vendor\cakephp\cakephp\src\Console\CommandRunner.php on line 346
+Stack Trace:
+#0 D:\Xamm74\htdocs\headers\vendor\cakephp\cakephp\src\Console\CommandRunner.php(157): Cake\Console\CommandRunner->resolveName(Object(Cake\Console\CommandCollection), Object(Cake\Console\ConsoleIo), 'servere')
+#1 D:\Xamm74\htdocs\headers\bin\cake.php(12): Cake\Console\CommandRunner->run(Array)
+#2 {main}
+
+
+2022-10-24 01:46:24 Error: [RuntimeException] Unknown command `cake sever`. Run `cake --help` to get the list of valid commands. in D:\Xamm74\htdocs\headers\vendor\cakephp\cakephp\src\Console\CommandRunner.php on line 346
+Stack Trace:
+#0 D:\Xamm74\htdocs\headers\vendor\cakephp\cakephp\src\Console\CommandRunner.php(157): Cake\Console\CommandRunner->resolveName(Object(Cake\Console\CommandCollection), Object(Cake\Console\ConsoleIo), 'sever')
+#1 D:\Xamm74\htdocs\headers\bin\cake.php(12): Cake\Console\CommandRunner->run(Array)
+#2 {main}
+
+
